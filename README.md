@@ -9,17 +9,26 @@
 - Список заказов
 
 ## Установка
+```bash
 pip install -r requirements.txt
+```
 
 ## Запуск тестов
+```bash
 pytest tests/ -v
+```
 
 ## Allure-отчёт
+
+```bash
 pytest tests/ --alluredir=allure_results
 allure generate allure_results -o allure_report --clean
 allure open allure_report
+```
 
 ## Структура
+
+```text 
 Sprint_7/
 ├── data/                          # Данные: константы, тексты, тестовые данные
 │   ├── __init__.py                # Пустой файл, чтобы Python видел папку как пакет
@@ -45,3 +54,4 @@ Sprint_7/
 ├── requirements.txt               # Список библиотек
 ├── .gitignore                     # Что не отправлять в git (venv, кэш, allure_results)
 └── README.md                      # Описание проекта и как его запускать
+```
